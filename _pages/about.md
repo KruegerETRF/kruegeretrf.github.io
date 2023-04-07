@@ -10,7 +10,7 @@ toc_icon: "cog"
 # Contact Details
 - For my research, you can contact me at kai (dot) krueger (at) bibb (dot) de
 - If you want to contact me for any matter concerning my teaching at the University of Koblenz, please use kkrueger (at) uni-koblenz (dot) de
-- You can also always shoot me a message at the social media accounts provided here on this website. I am always glad to help, if I can! 
+- You can also always shoot me a message at the social media accounts linked here on this website. I am always glad to help, if I can! 
 
 # Bio
 - February 2022: Research Associate in Computational Linguistics at the German Federal Institute for Vocational Education and Training ([BIBB](https://www.bibb.de/en/index.php)). 

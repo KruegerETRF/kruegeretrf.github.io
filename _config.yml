@@ -38,11 +38,17 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Berlin
 
+search: true 
 
 #masterhead
 logo: "/assets/images/masterhead_logo.png"
 masthead_title: "Home"
 
+#comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "https-kruegeretrf-github-io"
 
 
 include:
@@ -97,7 +103,7 @@ footer:
         url: "https://www.instagram.com/kaikrueger.1/"
 
 
-teaser: /assets/images/default_teaser.png
+teaser: /assets/images/default_teaser.jpg
 og_image: /assets/images/masterhead_logo.png
 
 
