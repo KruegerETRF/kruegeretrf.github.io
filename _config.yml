@@ -13,16 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Kai Krüger
+title_seperator: "|"
+
+name: "Kai Krüger"
+email: kai.krueger@bibb.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Personal website an blog of Kai Krüger, researcher in computational linguistics. 
+# twitter_username: username
+github_username: kruegerETRF
+url: "https://kruegeretrf.github.io"
+#baseurl: kruegeretrf
+repository: "kruegeretrf/kruegeretrf.github.io"
+minimal_mistakes_skin: air
 search: true
+
 
 # Build settings
 markdown: kramdown
@@ -31,7 +36,14 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Berlin
+
+
+#masterhead
+logo: "/assets/images/masterhead_logo.png"
+masthead_title: "Home"
+
+
 
 include:
   - _pages
@@ -58,34 +70,36 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Kai Krüger"
+  avatar : "/assets/images/bio-pic.jpg"
+  bio    : "Computational Linguist at [BIBB](https://www.bibb.de/en/index.php). I blog about all things NLP, AI and Cognitive Linguistics."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/KruegerETRF/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kai-kr%C3%BCger-494773163/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/kaikrueger.1/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/KruegerETRF/"
+      - label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/in/kai-kr%C3%BCger-494773163/"
+      - label: "Instagram"
+        icon: "fab fa-fw fa-instagram"
+        url: "https://www.instagram.com/kaikrueger.1/"
+
+
+teaser: /assets/images/default_teaser.png
+og_image: /assets/images/masterhead_logo.png
+
 
 defaults:
   # _posts
@@ -99,6 +113,9 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+      date_format: "%Y-%m-%d"
+
   # _pages
   - scope:
       path: "_pages"
@@ -113,3 +130,18 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+og_image: /assets/images/masterhead_logo.png
+
+social:
+  type:  Person
+  name:  Kai Krüger
+  links:
+    - "https://www.instagram.com/kaikrueger.1/"
+    - "https://www.linkedin.com/in/kai-kr%C3%BCger-494773163/"
+
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment
